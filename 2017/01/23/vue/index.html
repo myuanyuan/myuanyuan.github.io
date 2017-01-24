@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="vue,js," />
 
 
 
@@ -57,15 +57,19 @@
 
 
 
-<meta name="description" content="追求美好，追求纯粹，并且一直相信">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="vue1.0到2.0
+组件之间信息传递废话不多说了，我们直接来看通过props来进行组件之间信息传递的部分吧每一个vue实例都是一个事件触发器：1234$on---------------监听事件$emit---------------把事件沿着作用于链向上派送$dispatch------------派发事件，事件沿着父链冒泡$broadcast--------------广播事件，事件向下传递">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vue">
+<meta property="og:url" content="http://yoursite.com/2017/01/23/vue/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="追求美好，追求纯粹，并且一直相信">
+<meta property="og:description" content="vue1.0到2.0
+组件之间信息传递废话不多说了，我们直接来看通过props来进行组件之间信息传递的部分吧每一个vue实例都是一个事件触发器：1234$on---------------监听事件$emit---------------把事件沿着作用于链向上派送$dispatch------------派发事件，事件沿着父链冒泡$broadcast--------------广播事件，事件向下传递">
+<meta property="og:updated_time" content="2017-01-24T10:41:03.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="追求美好，追求纯粹，并且一直相信">
+<meta name="twitter:title" content="vue">
+<meta name="twitter:description" content="vue1.0到2.0
+组件之间信息传递废话不多说了，我们直接来看通过props来进行组件之间信息传递的部分吧每一个vue实例都是一个事件触发器：1234$on---------------监听事件$emit---------------把事件沿着作用于链向上派送$dispatch------------派发事件，事件沿着父链冒泡$broadcast--------------广播事件，事件向下传递">
 
 
 
@@ -83,7 +87,7 @@
   };
 </script>
 
-  <title> Hexo </title>
+  <title> vue | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -104,9 +108,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -183,9 +185,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -205,10 +207,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/01/23/vue/" itemprop="url">
-                  vue
-                </a>
+                vue
               
             
           </h1>
@@ -247,9 +246,7 @@
       
 
       
-        
-          
-            <p>vue1.0到2.0</p>
+        <p>vue1.0到2.0</p>
 <h2 id="组件之间信息传递"><a href="#组件之间信息传递" class="headerlink" title="组件之间信息传递"></a>组件之间信息传递</h2><p>废话不多说了，我们直接来看通过props来进行组件之间信息传递的部分吧<br>每一个vue实例都是一个事件触发器：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="variable">$on</span>---------------监听事件</div><div class="line"><span class="variable">$emit</span>---------------把事件沿着作用于链向上派送</div><div class="line"><span class="variable">$dispatch</span>------------派发事件，事件沿着父链冒泡</div><div class="line"><span class="variable">$broadcast</span>--------------广播事件，事件向下传递给所有的后代</div></pre></td></tr></table></figure></p>
 <p>ok，上代码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line">&lt;!--子组件模版--&gt;</div><div class="line">&lt;template id=<span class="string">"child-template"</span>&gt;</div><div class="line">    &lt;input v-model=<span class="string">"msg"</span>/&gt;</div><div class="line">    &lt;button v-on:click=<span class="string">"notify"</span>&gt;Dispatch Event&lt;/button&gt;</div><div class="line">&lt;/template&gt;</div><div class="line">&lt;!--父组件模版--&gt;</div><div class="line">    &lt;div id=<span class="string">"events-example"</span>&gt;</div><div class="line">        &lt;p&gt;Message:&#123;&#123;message|json&#125;&#125;&lt;/p&gt;</div><div class="line">        &lt;child&gt;&lt;/child&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;script&gt;</div><div class="line"></div><div class="line"></div><div class="line">    //注册子组件</div><div class="line">    //将当前消息派发出去</div><div class="line">    Vue.component(<span class="string">'child'</span>,&#123;</div><div class="line">        template:<span class="string">'#child-template'</span>,</div><div class="line">        data:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">            <span class="built_in">return</span> &#123;msg:<span class="string">'hello'</span>&#125;</div><div class="line">        &#125;,</div><div class="line">        methods:&#123;</div><div class="line">            notify:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                <span class="keyword">if</span>(this.msg.trim())&#123;</div><div class="line">                    this.<span class="variable">$dispatch</span>(<span class="string">'child-msg'</span>,this.msg)</div><div class="line">                    this.msg=<span class="string">''</span></div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line"></div><div class="line"></div><div class="line">    //初始化父组件</div><div class="line">    //收到消息时将事件推入到一个数组中</div><div class="line">    var parent=new Vue(&#123;</div><div class="line">        el:<span class="string">'#events-example'</span>,</div><div class="line">        data:&#123;</div><div class="line">            messages:[]</div><div class="line">        &#125;,</div><div class="line">        //在创建实例时，events选项简单的调用<span class="string">'$on'</span></div><div class="line">        events:&#123;</div><div class="line">            child-messages:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                this.message.push(msg)</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
 <p>当然这样好像还不能直观的看到child-msg来自哪里我们再进行一点改进<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div></pre></td><td class="code"><pre><div class="line">&lt;body&gt;</div><div class="line">&lt;!--子组件模版--&gt;</div><div class="line">&lt;template id=<span class="string">"child-template"</span>&gt;</div><div class="line">    &lt;input v-model=<span class="string">"msg"</span>/&gt;</div><div class="line">    &lt;button v-on:click=<span class="string">"notify"</span>&gt;Dispatch Event&lt;/button&gt;</div><div class="line">&lt;/template&gt;</div><div class="line">&lt;!--父组件模版--&gt;</div><div class="line">    &lt;div id=<span class="string">"events-example"</span>&gt;</div><div class="line">        &lt;p&gt;Message:&#123;&#123;message|json&#125;&#125;&lt;/p&gt;</div><div class="line">        &lt;child v-on:child-msg=<span class="string">'handleIt'</span>&gt;&lt;/child&gt;</div><div class="line">    &lt;/div&gt;</div><div class="line">&lt;/body&gt;</div><div class="line">&lt;script&gt;</div><div class="line"></div><div class="line"></div><div class="line">    //注册子组件</div><div class="line">    //将当前消息派发出去</div><div class="line">    Vue.component(<span class="string">'child'</span>,&#123;</div><div class="line">        template:<span class="string">'#child-template'</span>,</div><div class="line">        data:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">            <span class="built_in">return</span> &#123;msg:<span class="string">'hello'</span>&#125;</div><div class="line">        &#125;,</div><div class="line">        methods:&#123;</div><div class="line">            notify:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                <span class="keyword">if</span>(this.msg.trim())&#123;</div><div class="line">                    this.<span class="variable">$dispatch</span>(<span class="string">'child-msg'</span>,this.msg)</div><div class="line">                    this.msg=<span class="string">''</span></div><div class="line">                &#125;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line"></div><div class="line"></div><div class="line">    //初始化父组件</div><div class="line">    //收到消息时将事件推入到一个数组中</div><div class="line">    var parent=new Vue(&#123;</div><div class="line">        el:<span class="string">'#events-example'</span>,</div><div class="line">        data:&#123;</div><div class="line">            messages:[]</div><div class="line">        &#125;,</div><div class="line">        //在创建实例时，events选项简单的调用<span class="string">'$on'</span></div><div class="line">        methods:&#123;</div><div class="line">            <span class="string">'handleIt'</span>:<span class="function"><span class="title">function</span></span>()&#123;</div><div class="line">                alert(<span class="string">'a'</span>);</div><div class="line">                this.message.push(msg)</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;)</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
@@ -264,404 +261,53 @@
 <p>全片段匹配<br>因为*可以匹配任意路径，我们可以用它来匹配默认路径，代码如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">router.map(&#123;</div><div class="line">    <span class="string">'*'</span>:&#123;</div><div class="line">        component:&#123;</div><div class="line">            template:<span class="string">'&lt;p&gt;default&lt;/p&gt;'</span></div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">&#125;)</div></pre></td></tr></table></figure></p>
 <h2 id="与服务端通信"><a href="#与服务端通信" class="headerlink" title="与服务端通信"></a>与服务端通信</h2><p>自从知道vue-resource已经不在维护了以后，就在寻求其它方式 fetch 之前发现存在不兼容ios9的问题，但是后来还是解决了，另外vue官网推荐使用axios,<br>稍微研究了一下。</p>
 
-          
-        
       
     </div>
 
     <div>
       
+        
+      
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/01/17/接手的Angular/" itemprop="url">
-                  接手的Angular
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-17T19:24:21+08:00" content="2017-01-17">
-              2017-01-17
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-
+            <a href="/tags/vue/" rel="tag">#vue</a>
           
-            
+            <a href="/tags/js/" rel="tag">#js</a>
           
-
-          
-
-          
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://myuanyuan.github.io/" target="_blank" rel="external">Hexo</a>,Happy new year!<br>年末接手了一个anjular项目，项目并不复杂，但是给人很乱的感觉，所以重新回顾angular，并且期待新的收获。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/01/17/接手的Angular/" rel="next" title="接手的Angular">
+                <i class="fa fa-chevron-left"></i> 接手的Angular
+              </a>
             
-              
-                
-                <a class="post-title-link" href="/2017/01/17/CSS揭秘/" itemprop="url">
-                  CSS揭秘
-                </a>
-              
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
             
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-17T19:14:07+08:00" content="2017-01-17">
-              2017-01-17
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
+          </div>
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://myuanyuan.github.io/" target="_blank" rel="external">Hexo</a>,Happy new year!</p>
-<h2 id="过渡与动画"><a href="#过渡与动画" class="headerlink" title="过渡与动画"></a>过渡与动画</h2><p>我们先来写一个弹跳的动画<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="string">"@keyframes bounce&#123;</span></div><div class="line">    60%,80%,to&#123;transform:translateY(350px);&#125;</div><div class="line">    70%&#123;transform:translateY(250px);&#125;</div><div class="line">    90%&#123;transform:translateY(300px);&#125;</div><div class="line">&#125;</div><div class="line">.ball&#123;</div><div class="line">    animation:bounce 3s;</div><div class="line">&#125;"</div></pre></td></tr></table></figure></p>
-<p>运行一下看一下效果吧</p>
-<p>当然，还没有结束，我们再进行一点小小的改动<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="string">"@keyframes bounce&#123;</span></div><div class="line">            60%,80%,to&#123;transform:translateY(350px);animation-timing-function: ease-out;&#125;</div><div class="line">            70%&#123;transform:translateY(250px);&#125;</div><div class="line">            90%&#123;transform:translateY(300px);&#125;</div><div class="line">        &#125;</div><div class="line">        .ball &#123;</div><div class="line">            height:100px;</div><div class="line">            width:100px;</div><div class="line">            background: #ffb8f1;</div><div class="line">            animation: bounce 3s ease-in;</div><div class="line">            border-radius: 50px;</div><div class="line">        &#125;"</div></pre></td></tr></table></figure></p>
-<p>如你所见，内置的animation-time-function/translation-time-function有以下5种：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ease-in</div><div class="line">ease-out</div><div class="line">ease-in-out</div><div class="line">linear</div></pre></td></tr></table></figure></p>
-<p>其中ease-in和ease-out是反向版本，我们希望下落的方向上是加速的(ease-out)，而回跳的方向上减速(ease-in),再次运行一下，看一下效果吧</p>
-<p>那么问题来了，当这五种内置的缓动曲线不能满足我们的需求时，我们又该怎么做呢？</p>
-<p>实际上这五种曲线都是通过三次贝塞尔曲线指定的，作为对上述五种预定义曲线对补充，css提供了一个cubic-bezier()函数，<br>它接受四个参数，分别代表两个控制锚点的坐标。语法为：<br>cubic-bezier(x1,y1,x2,y2);</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-      
 
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/01/17/hello-2017/" itemprop="url">
-                  Hello 2017
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-17T18:02:23+08:00" content="2017-01-17">
-              2017-01-17
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://myuanyuan.github.io/" target="_blank" rel="external">Hexo</a>!Maybe this is your very first post. Check <a href="https://github.com/myuanyuan/" target="_blank" rel="external">documentation</a> for more info. If you get any problems , you can ask me on <a href="https://github.com/myuanyuan/" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="vueJs"><a href="#vueJs" class="headerlink" title="vueJs"></a>vueJs</h2><h3 id="vuejs-1-0"><a href="#vuejs-1-0" class="headerlink" title="vuejs 1.0"></a>vuejs 1.0</h3><p>e`v4</p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/01/17/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-17T17:55:12+08:00" content="2017-01-17">
-              2017-01-17
-            </time>
-          </span>
-
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
+  </div>
 
 
           </div>
@@ -669,6 +315,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -688,8 +338,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/uploads/avatar.jpg"
@@ -734,6 +393,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#组件之间信息传递"><span class="nav-number">1.</span> <span class="nav-text">组件之间信息传递</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vue-router"><span class="nav-number">2.</span> <span class="nav-text">vue router</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#router-view"><span class="nav-number">2.1.</span> <span class="nav-text">router-view</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#路由匹配"><span class="nav-number">2.2.</span> <span class="nav-text">路由匹配</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#与服务端通信"><span class="nav-number">3.</span> <span class="nav-text">与服务端通信</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -818,6 +488,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=0.5.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=0.5.0"></script>
+
+
 
   
 
