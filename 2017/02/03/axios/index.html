@@ -57,16 +57,16 @@
 
 
 
-<meta name="description" content="追求美好，追求纯粹，并且一直相信">
+<meta name="description" content="get请求传参：axios.http(req, res).get(‘/v1/promotions/‘, {        params:{ start:start, limit:limit }}).then(resp=&amp;gt; {        // dostring…    }).then(data=&amp;gt; {        //dostring…    }).catch(err=&amp;gt; {">
 <meta property="og:type" content="article">
 <meta property="og:title" content="axios">
 <meta property="og:url" content="http://yoursite.com/2017/02/03/axios/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="追求美好，追求纯粹，并且一直相信">
-<meta property="og:updated_time" content="2017-02-03T14:38:21.000Z">
+<meta property="og:description" content="get请求传参：axios.http(req, res).get(‘/v1/promotions/‘, {        params:{ start:start, limit:limit }}).then(resp=&amp;gt; {        // dostring…    }).then(data=&amp;gt; {        //dostring…    }).catch(err=&amp;gt; {">
+<meta property="og:updated_time" content="2017-02-03T14:58:02.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="axios">
-<meta name="twitter:description" content="追求美好，追求纯粹，并且一直相信">
+<meta name="twitter:description" content="get请求传参：axios.http(req, res).get(‘/v1/promotions/‘, {        params:{ start:start, limit:limit }}).then(resp=&amp;gt; {        // dostring…    }).then(data=&amp;gt; {        //dostring…    }).catch(err=&amp;gt; {">
 
 
 
@@ -243,7 +243,9 @@
       
 
       
-        
+        <p>get请求传参：<br>axios.http(req, res).get(‘/v1/promotions/‘, {<br>        params:{ start:start, limit:limit }}).then(resp=&gt; {<br>        // dostring…<br>    }).then(data=&gt; {<br>        //dostring…<br>    }).catch(err=&gt; {<br>        console.log(err);<br>    })</p>
+<p>get 方法的第二个参数，必须是一个对象 对象内配置params属性即可。<br>parmas属性也必须是一个对象，不可用es6方式简写。</p>
+
       
     </div>
 
