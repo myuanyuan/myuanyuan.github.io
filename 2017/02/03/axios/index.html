@@ -41,7 +41,7 @@
 <link href="/css/main.css?v=0.5.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="css," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -57,19 +57,16 @@
 
 
 
-<meta name="description" content="Welcome to Hexo,Happy new year!
-过渡与动画我们先来写一个弹跳的动画12345678&quot;@keyframes bounce&amp;#123;    60%,80%,to&amp;#123;transform:translateY(350px);&amp;#125;    70%&amp;#123;transform:translateY(250px);&amp;#125;    90%&amp;#123;trans">
+<meta name="description" content="追求美好，追求纯粹，并且一直相信">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS揭秘">
-<meta property="og:url" content="http://yoursite.com/2017/01/17/CSS揭秘/index.html">
+<meta property="og:title" content="axios">
+<meta property="og:url" content="http://yoursite.com/2017/02/03/axios/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo,Happy new year!
-过渡与动画我们先来写一个弹跳的动画12345678&quot;@keyframes bounce&amp;#123;    60%,80%,to&amp;#123;transform:translateY(350px);&amp;#125;    70%&amp;#123;transform:translateY(250px);&amp;#125;    90%&amp;#123;trans">
-<meta property="og:updated_time" content="2017-01-21T09:56:53.000Z">
+<meta property="og:description" content="追求美好，追求纯粹，并且一直相信">
+<meta property="og:updated_time" content="2017-02-03T14:38:21.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS揭秘">
-<meta name="twitter:description" content="Welcome to Hexo,Happy new year!
-过渡与动画我们先来写一个弹跳的动画12345678&quot;@keyframes bounce&amp;#123;    60%,80%,to&amp;#123;transform:translateY(350px);&amp;#125;    70%&amp;#123;transform:translateY(250px);&amp;#125;    90%&amp;#123;trans">
+<meta name="twitter:title" content="axios">
+<meta name="twitter:description" content="追求美好，追求纯粹，并且一直相信">
 
 
 
@@ -87,7 +84,7 @@
   };
 </script>
 
-  <title> CSS揭秘 | Hexo </title>
+  <title> axios | Hexo </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -207,7 +204,7 @@
             
             
               
-                CSS揭秘
+                axios
               
             
           </h1>
@@ -219,8 +216,8 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-17T19:14:07+08:00" content="2017-01-17">
-              2017-01-17
+            <time itemprop="dateCreated" datetime="2017-02-03T22:38:21+08:00" content="2017-02-03">
+              2017-02-03
             </time>
           </span>
 
@@ -246,15 +243,7 @@
       
 
       
-        <p>Welcome to <a href="https://myuanyuan.github.io/" target="_blank" rel="external">Hexo</a>,Happy new year!</p>
-<h2 id="过渡与动画"><a href="#过渡与动画" class="headerlink" title="过渡与动画"></a>过渡与动画</h2><p>我们先来写一个弹跳的动画<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="string">"@keyframes bounce&#123;</span></div><div class="line">    60%,80%,to&#123;transform:translateY(350px);&#125;</div><div class="line">    70%&#123;transform:translateY(250px);&#125;</div><div class="line">    90%&#123;transform:translateY(300px);&#125;</div><div class="line">&#125;</div><div class="line">.ball&#123;</div><div class="line">    animation:bounce 3s;</div><div class="line">&#125;"</div></pre></td></tr></table></figure></p>
-<p>运行一下看一下效果吧</p>
-<p>当然，还没有结束，我们再进行一点小小的改动<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="string">"@keyframes bounce&#123;</span></div><div class="line">            60%,80%,to&#123;transform:translateY(350px);animation-timing-function: ease-out;&#125;</div><div class="line">            70%&#123;transform:translateY(250px);&#125;</div><div class="line">            90%&#123;transform:translateY(300px);&#125;</div><div class="line">        &#125;</div><div class="line">        .ball &#123;</div><div class="line">            height:100px;</div><div class="line">            width:100px;</div><div class="line">            background: #ffb8f1;</div><div class="line">            animation: bounce 3s ease-in;</div><div class="line">            border-radius: 50px;</div><div class="line">        &#125;"</div></pre></td></tr></table></figure></p>
-<p>如你所见，内置的animation-time-function/translation-time-function有以下5种：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">ease-in</div><div class="line">ease-out</div><div class="line">ease-in-out</div><div class="line">linear</div></pre></td></tr></table></figure></p>
-<p>其中ease-in和ease-out是反向版本，我们希望下落的方向上是加速的(ease-out)，而回跳的方向上减速(ease-in),再次运行一下，看一下效果吧</p>
-<p>那么问题来了，当这五种内置的缓动曲线不能满足我们的需求时，我们又该怎么做呢？</p>
-<p>实际上这五种曲线都是通过三次贝塞尔曲线指定的，作为对上述五种预定义曲线对补充，css提供了一个cubic-bezier()函数，<br>它接受四个参数，分别代表两个控制锚点的坐标。语法为：<br>cubic-bezier(x1,y1,x2,y2);</p>
-
+        
       
     </div>
 
@@ -266,27 +255,21 @@
 
     <footer class="post-footer">
       
-        <div class="post-tags">
-          
-            <a href="/tags/css/" rel="tag">#css</a>
-          
-        </div>
-      
 
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/01/17/hello-2017/" rel="next" title="Hello 2017">
-                <i class="fa fa-chevron-left"></i> Hello 2017
+              <a href="/2017/02/03/vue笔记/" rel="next" title="vue笔记">
+                <i class="fa fa-chevron-left"></i> vue笔记
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/01/17/接手的Angular/" rel="prev" title="接手的Angular">
-                接手的Angular <i class="fa fa-chevron-right"></i>
+              <a href="/2017/02/03/vue笔记2/" rel="prev" title="vue笔记2">
+                vue笔记2 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -396,7 +379,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#过渡与动画"><span class="nav-number">1.</span> <span class="nav-text">过渡与动画</span></a></li></ol></div>
+              <p class="post-toc-empty">此文章未包含目录</p>
             
           </div>
         </section>
