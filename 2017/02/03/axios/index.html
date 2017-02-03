@@ -57,16 +57,16 @@
 
 
 
-<meta name="description" content="get请求传参：12345678axios.http(req, res).get(&apos;/v1/promotions/&apos;, &amp;#123;        params:&amp;#123; start:start, limit:limit &amp;#125;&amp;#125;).then(resp=&amp;gt; &amp;#123;        // dostring...    &amp;#125;).then(data=&amp;gt; &amp;#1">
+<meta name="description" content="get请求传参：12345678&quot;axios.http(req, res).get(&apos;/v1/promotions/&apos;, &amp;#123;        params:&amp;#123; start:start, limit:limit &amp;#125;&amp;#125;).then(resp=&amp;gt; &amp;#123;        // dostring...    &amp;#125;).then(data=&amp;gt; &amp;#">
 <meta property="og:type" content="article">
 <meta property="og:title" content="axios">
 <meta property="og:url" content="http://yoursite.com/2017/02/03/axios/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="get请求传参：12345678axios.http(req, res).get(&apos;/v1/promotions/&apos;, &amp;#123;        params:&amp;#123; start:start, limit:limit &amp;#125;&amp;#125;).then(resp=&amp;gt; &amp;#123;        // dostring...    &amp;#125;).then(data=&amp;gt; &amp;#1">
-<meta property="og:updated_time" content="2017-02-03T14:59:49.000Z">
+<meta property="og:description" content="get请求传参：12345678&quot;axios.http(req, res).get(&apos;/v1/promotions/&apos;, &amp;#123;        params:&amp;#123; start:start, limit:limit &amp;#125;&amp;#125;).then(resp=&amp;gt; &amp;#123;        // dostring...    &amp;#125;).then(data=&amp;gt; &amp;#">
+<meta property="og:updated_time" content="2017-02-03T15:00:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="axios">
-<meta name="twitter:description" content="get请求传参：12345678axios.http(req, res).get(&apos;/v1/promotions/&apos;, &amp;#123;        params:&amp;#123; start:start, limit:limit &amp;#125;&amp;#125;).then(resp=&amp;gt; &amp;#123;        // dostring...    &amp;#125;).then(data=&amp;gt; &amp;#1">
+<meta name="twitter:description" content="get请求传参：12345678&quot;axios.http(req, res).get(&apos;/v1/promotions/&apos;, &amp;#123;        params:&amp;#123; start:start, limit:limit &amp;#125;&amp;#125;).then(resp=&amp;gt; &amp;#123;        // dostring...    &amp;#125;).then(data=&amp;gt; &amp;#">
 
 
 
@@ -243,7 +243,7 @@
       
 
       
-        <h2 id="get请求传参："><a href="#get请求传参：" class="headerlink" title="get请求传参："></a>get请求传参：</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">axios.http(req, res).get(<span class="string">'/v1/promotions/'</span>, &#123;</div><div class="line">        <span class="attr">params</span>:&#123; <span class="attr">start</span>:start, <span class="attr">limit</span>:limit &#125;&#125;).then(<span class="function"><span class="params">resp</span>=&gt;</span> &#123;</div><div class="line">        <span class="comment">// dostring...</span></div><div class="line">    &#125;).then(<span class="function"><span class="params">data</span>=&gt;</span> &#123;</div><div class="line">        <span class="comment">//dostring...</span></div><div class="line">    &#125;).catch(<span class="function"><span class="params">err</span>=&gt;</span> &#123;</div><div class="line">        <span class="built_in">console</span>.log(err);</div><div class="line">    &#125;)</div></pre></td></tr></table></figure>
+        <h2 id="get请求传参："><a href="#get请求传参：" class="headerlink" title="get请求传参："></a>get请求传参：</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="string">"axios.http(req, res).get('/v1/promotions/', &#123;</span></div><div class="line">        params:&#123; start:start, limit:limit &#125;&#125;).then(resp=&gt; &#123;</div><div class="line">        // dostring...</div><div class="line">    &#125;).then(data=&gt; &#123;</div><div class="line">        //dostring...</div><div class="line">    &#125;).catch(err=&gt; &#123;</div><div class="line">        console.log(err);</div><div class="line">    &#125;)"</div></pre></td></tr></table></figure>
 <p>get 方法的第二个参数，必须是一个对象 对象内配置params属性即可。<br>parmas属性也必须是一个对象，不可用es6方式简写。</p>
 
       
